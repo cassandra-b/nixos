@@ -1,10 +1,14 @@
 { pkgs, ... }:
 
 {
+  home.sessionVariables.EDITOR = "nvim";
+
   programs.neovim = {
     enable = true;
+    extraConfig = builtins.readFile ./extra-config.vim;
     extraPackages = [ pkgs.nixfmt ];
     plugins = [
+      pkgs.vimPlugins.goyo
       {
         plugin = pkgs.vimPlugins.neoformat;
         type = "lua";
@@ -62,4 +66,9 @@
       pkgs.vimPlugins.vim-nix
     ];
   };
+
+  xdg.configFile."nvim/ftplugin/markdown.vim".text = ''
+    let g:neoformat_enabled_markdown = []
+    setlocal lbr
+  '';
 }

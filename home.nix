@@ -3,8 +3,38 @@
 {
   imports = [ ./neovim ];
 
+  fonts.fontconfig.enable = true;
+
   home = {
     enableNixpkgsReleaseCheck = true;
+
+    packages = [
+      pkgs.discord
+      pkgs.google-chrome
+      pkgs.pavucontrol
+      pkgs.signal-desktop
+      pkgs.sublime4
+      pkgs.zoom-us
+
+      # Fonts
+      pkgs.iosevka
+      pkgs.noto-fonts
+      pkgs.noto-fonts-cjk
+      pkgs.noto-fonts-emoji
+
+      # Utilities (CLI)
+      pkgs.fd
+      pkgs.file
+      pkgs.iperf3
+      pkgs.ncdu
+      pkgs.ripgrep
+
+      # Utilities (GUI)
+      pkgs.arandr
+    ];
+
+    # This is the version that was *originally* installed. Do not change this
+    # when updating!
     stateVersion = "22.11";
   };
 
@@ -16,8 +46,15 @@
         enable = true;
         options.color-only = true;
       };
-      # TODO userEmail = "...";
+      userEmail = "cassie.bleskachek@gmail.com";
       userName = "Cassie Bleskachek";
+    };
+    kitty = {
+      enable = true;
+      font = {
+        name = "Iosevka";
+        size = 14;
+      };
     };
     zsh = {
       enable = true;
