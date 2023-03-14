@@ -73,6 +73,8 @@
         "steam-run"
         "sublimetext4"
         "zoom"
+        "nvidia-x11"
+        "nvidia-settings"
       ];
     hostPlatform = lib.mkDefault "x86_64-linux";
   };
@@ -87,6 +89,7 @@
   services = {
     cinnamon.apps.enable = true;
     xserver = {
+      videoDrivers = ["nvidia" "modesetting"];
       enable = true;
       desktopManager.cinnamon.enable = true;
       libinput.enable = true;

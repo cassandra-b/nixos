@@ -28,6 +28,7 @@
       pkgs.iperf3
       pkgs.ncdu
       pkgs.ripgrep
+      pkgs.mono5
 
       # Utilities (GUI)
       pkgs.arandr
