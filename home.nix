@@ -32,6 +32,7 @@
 
       # Utilities (GUI)
       pkgs.arandr
+      pkgs.sct
     ];
 
     # This is the version that was *originally* installed. Do not change this
