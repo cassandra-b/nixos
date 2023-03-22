@@ -29,7 +29,7 @@
       pkgs.ncdu
       pkgs.ripgrep
       pkgs.mono5
-      pkgs.python3
+      pkgs.python3Full
 
       # Utilities (GUI)
       pkgs.arandr
