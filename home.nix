@@ -30,7 +30,6 @@
       pkgs.ripgrep
       pkgs.mono5
       pkgs.python3Full
-
       pkgs.libevdev
       pkgs.joycond
 
