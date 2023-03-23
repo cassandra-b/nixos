@@ -88,6 +88,7 @@
 
   services = {
     cinnamon.apps.enable = true;
+    joycond.enable = true;
     xserver = {
       videoDrivers = ["nvidia" "modesetting"];
       enable = true;
