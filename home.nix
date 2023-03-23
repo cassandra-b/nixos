@@ -33,7 +33,8 @@
       pkgs.linuxKernel.packages.linux_6_2.hid-nintendo
       pkgs.libevdev
       pkgs.joycond
-
+      pkgs.qdirstat
+      
       # Utilities (GUI)
       pkgs.arandr
       pkgs.sct
