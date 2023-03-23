@@ -30,6 +30,7 @@
       pkgs.ripgrep
       pkgs.mono5
       pkgs.python3Full
+      pkgs.joycond
 
       # Utilities (GUI)
       pkgs.arandr
