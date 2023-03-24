@@ -15,8 +15,17 @@
     kernelModules = [ "kvm-intel" ];
     kernelParams = [ "boot.shell_on_fail" ];
     loader = {
-      efi.canTouchEfiVariables = true;
-      systemd-boot.enable = true;
+      efi = {
+        canTouchEfiVariables = true;
+        efiSysMountPoint = "/boot/efi";
+      };
+      grub = {
+        enable = true;
+        version = 2;
+        efiSupport = true;
+        device = "nodev";
+      };
+      systemd-boot.enable = false;
     };
   };
 
@@ -90,7 +99,7 @@
     cinnamon.apps.enable = true;
     joycond.enable = true;
     xserver = {
-      videoDrivers = ["nvidia" "modesetting"];
+      videoDrivers = [ "nvidia" "modesetting" ];
       enable = true;
       desktopManager.cinnamon.enable = true;
       libinput.enable = true;
