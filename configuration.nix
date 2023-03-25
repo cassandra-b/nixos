@@ -35,6 +35,10 @@
       fsType = "zfs";
     };
     "/boot" = {
+      device = "/dev/disk/by-uuid/1a2a3664-fc33-4f77-947a-83155cb06c6b";
+      fsType = "ext4";
+    };
+    "/boot/efi" = {
       device = "/dev/disk/by-uuid/D0A2-DAD4";
       fsType = "vfat";
     };
