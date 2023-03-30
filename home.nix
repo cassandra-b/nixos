@@ -15,6 +15,7 @@
       pkgs.signal-desktop
       pkgs.sublime4
       pkgs.zoom-us
+      pkgs.vlc
 
       # Fonts
       pkgs.iosevka
