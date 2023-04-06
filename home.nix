@@ -22,6 +22,8 @@
       pkgs.noto-fonts
       pkgs.noto-fonts-cjk
       pkgs.noto-fonts-emoji
+      pkgs.fcitx5
+      pkgs.fcitx-chinese-addons
 
       # Utilities (CLI)
       pkgs.fd
@@ -36,7 +38,7 @@
       pkgs.joycond
       pkgs.qdirstat
       pkgs.dislocker
-      
+
       # Utilities (GUI)
       pkgs.arandr
       pkgs.sct

@@ -88,6 +88,7 @@
         "zoom"
         "nvidia-x11"
         "nvidia-settings"
+        "fcitx5"
       ];
     hostPlatform = lib.mkDefault "x86_64-linux";
   };
