@@ -36,6 +36,10 @@
       pkgs.joycond
       pkgs.qdirstat
       pkgs.dislocker
+      pkgs.xclip
+      pkgs.libnotify
+      pkgs.dmenu
+      pkgs.rofi
       
       # Utilities (GUI)
       pkgs.arandr
