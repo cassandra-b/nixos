@@ -35,12 +35,8 @@
       pkgs.libevdev
       pkgs.joycond
       pkgs.qdirstat
-      pkgs.dislocker
-      pkgs.xclip
-      pkgs.libnotify
-      pkgs.dmenu
-      pkgs.rofi
-      
+      pkgs.dislocke
+rb       
       # Utilities (GUI)
       pkgs.arandr
       pkgs.sct
