@@ -35,8 +35,8 @@
       pkgs.libevdev
       pkgs.joycond
       pkgs.qdirstat
-      pkgs.dislocke
-rb       
+      pkgs.dislocker
+      
       # Utilities (GUI)
       pkgs.arandr
       pkgs.sct
