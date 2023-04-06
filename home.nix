@@ -23,7 +23,7 @@
       pkgs.noto-fonts-cjk
       pkgs.noto-fonts-emoji
       pkgs.fcitx5
-      pkgs.fcitx-chinese-addons
+      pkgs.fcitx5-chinese-addons
 
       # Utilities (CLI)
       pkgs.fd
