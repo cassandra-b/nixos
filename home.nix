@@ -17,6 +17,7 @@
       pkgs.zoom-us
       pkgs.vlc
       pkgs.openmw
+      pkgs.pocket-casts
 
       # Fonts
       pkgs.iosevka
