@@ -16,6 +16,7 @@
       pkgs.sublime4
       pkgs.zoom-us
       pkgs.vlc
+      pkgs.openmw
 
       # Fonts
       pkgs.iosevka
