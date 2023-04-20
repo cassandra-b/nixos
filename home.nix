@@ -41,6 +41,7 @@
       pkgs.qdirstat
       pkgs.dislocker
       pkgs.tesseract
+      pkgs.ocrmypdf
 
       # Utilities (GUI)
       pkgs.arandr
