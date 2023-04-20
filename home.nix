@@ -40,6 +40,7 @@
       pkgs.joycond
       pkgs.qdirstat
       pkgs.dislocker
+      pkgs.tesseract
 
       # Utilities (GUI)
       pkgs.arandr
