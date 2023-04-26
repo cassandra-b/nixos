@@ -47,7 +47,6 @@
       pkgs.arandr
       pkgs.sct
       pkgs.cool-retro-term
-      pkgs.itch
     ];
 
     # This is the version that was *originally* installed. Do not change this

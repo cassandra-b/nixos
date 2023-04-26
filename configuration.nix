@@ -89,7 +89,6 @@
         "nvidia-x11"
         "nvidia-settings"
         "fcitx5"
-        "electron-11.5.0"
       ];
     hostPlatform = lib.mkDefault "x86_64-linux";
   };
