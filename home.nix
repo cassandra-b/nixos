@@ -47,6 +47,7 @@
       pkgs.arandr
       pkgs.sct
       pkgs.cool-retro-term
+      pkgs.gimp
     ];
 
     # This is the version that was *originally* installed. Do not change this
