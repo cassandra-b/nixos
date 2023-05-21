@@ -42,6 +42,7 @@
       pkgs.dislocker
       pkgs.tesseract
       pkgs.ocrmypdf
+      pkgs.ps3-disc-dumper
 
       # Utilities (GUI)
       pkgs.arandr
