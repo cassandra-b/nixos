@@ -40,3 +40,22 @@ Text me if you see this, it's not hard but the syntax has to be right.
 To upgrade the available packages *without* upgrading to the newest release, run `nix flake update` in this repo.
 This should change `flake.lock` if there was an update available, but will not apply the changes to the system.
 See the above "Applying Changes" section for instructions on applying changes.
+
+
+
+## Disabling IPv6
+diff --git a/configuration.nix b/configuration.nix
+index f7098e6..2e31c40 100644
+--- a/configuration.nix
++++ b/configuration.nix
+@@ -12,6 +12,10 @@
+       availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" ];
+       kernelModules = [ ];
+     };
++    kernel.sysctl = {
++      "net.ipv6.conf.all.disable_ipv6" = 1;
++      "net.ipv6.conf.default.disable_ipv6" = 1;
++    };
+     kernelModules = [ "kvm-intel" ];
+     kernelParams = [ "boot.shell_on_fail" ];
+     loader = {

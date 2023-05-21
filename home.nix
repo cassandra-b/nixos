@@ -48,6 +48,7 @@
       pkgs.sct
       pkgs.cool-retro-term
       pkgs.gimp
+      pkgs.rpcs3
     ];
 
     # This is the version that was *originally* installed. Do not change this
