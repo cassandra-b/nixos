@@ -89,6 +89,7 @@
         "nvidia-x11"
         "nvidia-settings"
         "fcitx5"
+        "minecraft-launcher"
       ];
     hostPlatform = lib.mkDefault "x86_64-linux";
   };
