@@ -39,7 +39,6 @@
       pkgs.ripgrep
       pkgs.mono5
       pkgs.python3Full
-      pkgs.linuxKernel.packages.linux_6_2.hid-nintendo
       pkgs.libevdev
       pkgs.joycond
       pkgs.qdirstat
