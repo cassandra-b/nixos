@@ -47,6 +47,7 @@
       pkgs.ocrmypdf
       pkgs.ps3-disc-dumper
       pkgs.obs-studio
+      pkgs.audacity
 
       # Utilities (GUI)
       pkgs.arandr
