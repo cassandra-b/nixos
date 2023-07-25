@@ -46,6 +46,7 @@
       pkgs.tesseract
       pkgs.ocrmypdf
       pkgs.ps3-disc-dumper
+      pkgs.obs-studio
 
       # Utilities (GUI)
       pkgs.arandr
