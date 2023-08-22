@@ -48,6 +48,7 @@
       pkgs.ps3-disc-dumper
       pkgs.obs-studio
       pkgs.audacity
+      pkgs.fontpreview
 
       # Utilities (GUI)
       pkgs.arandr
