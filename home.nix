@@ -49,6 +49,7 @@
       pkgs.obs-studio
       pkgs.audacity
       pkgs.fontpreview
+      pkgs.otfcc
 
       # Utilities (GUI)
       pkgs.arandr
