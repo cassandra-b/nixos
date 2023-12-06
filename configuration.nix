@@ -97,7 +97,7 @@
   programs = {
     # Enabled by default by Cinnamon.
     gnome-terminal.enable = false;
-
+    zsh.enable = true;
     steam.enable = true;
   };
 
