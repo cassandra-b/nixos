@@ -20,8 +20,7 @@
       pkgs.pocket-casts
       pkgs.gimp
       pkgs.rpcs3
-      pkgs.minecraft
-      pkgs.prismlauncher
+
 
       # Fonts
       pkgs.iosevka
