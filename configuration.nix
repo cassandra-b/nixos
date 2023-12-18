@@ -77,20 +77,23 @@
   };
 
   nixpkgs = {
-    config.allowUnfreePredicate = pkg:
-      builtins.elem (lib.getName pkg) [
-        "discord"
-        "google-chrome"
-        "steam"
-        "steam-original"
-        "steam-run"
-        "sublimetext4"
-        "zoom"
-        "nvidia-x11"
-        "nvidia-settings"
-        "fcitx5"
-        "minecraft-launcher"
-      ];
+    config = {
+      allowUnfreePredicate = pkg:
+        builtins.elem (lib.getName pkg) [
+          "discord"
+          "google-chrome"
+          "steam"
+          "steam-original"
+          "steam-run"
+          "sublimetext4"
+          "zoom"
+          "nvidia-x11"
+          "nvidia-settings"
+          "fcitx5"
+          "minecraft-launcher"
+        ];
+      permittedInsecurePackages = [ "openssl-1.1.1w" ];
+    };
     hostPlatform = lib.mkDefault "x86_64-linux";
   };
 
