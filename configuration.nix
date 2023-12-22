@@ -6,7 +6,7 @@
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
   boot = {
-    cleanTmpDir = true;
+    cleanOnBoot = true;
     extraModulePackages = [ ];
     initrd = {
       availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" ];
@@ -21,7 +21,6 @@
       };
       grub = {
         enable = true;
-        version = 2;
         efiSupport = true;
         device = "nodev";
       };
