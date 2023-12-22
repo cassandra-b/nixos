@@ -6,7 +6,7 @@
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
 
   boot = {
-    cleanOnBoot = true;
+    tmp.cleanOnBoot = true;
     extraModulePackages = [ ];
     initrd = {
       availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" ];
