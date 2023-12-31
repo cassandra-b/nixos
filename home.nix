@@ -51,8 +51,6 @@
       pkgs.fontpreview
       pkgs.otfcc
       pkgs.libgdiplus
-      pkgs.dotnet-sdk_8
-      pkgs.dotnet-runtime_8
 
       # Utilities (GUI)
       pkgs.arandr
