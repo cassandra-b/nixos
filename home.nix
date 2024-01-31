@@ -51,6 +51,7 @@
       pkgs.fontpreview
       pkgs.otfcc
       pkgs.libgdiplus
+      pkgs.blueman
 
       # Utilities (GUI)
       pkgs.arandr
