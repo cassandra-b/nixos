@@ -1,5 +1,13 @@
 # Flake
 
+## Updating
+
+`cd flake`
+`nix flake update`
+`git commit flake.lock`
+`sudo nixos-rebuild --flake . switch`
+
+
 ## Applying Changes
 
 Once changes have been made to this repo, commit them, then run `sudo nixos-rebuild --flake . switch` in this repo.
@@ -12,7 +20,7 @@ Run `sudo nix-collect-garbage -d` to remove old generations.
 
 ## Finding programs
 
-The easiest place to look is [search.nixos.org](https://search.nixos.org/).
+The easiest place to look is [search.nixos.org](https://search.nxos.org/).
 Searching, for example, "pavucontrol" there will show a list of results including the package `pavucontrol`.
 
 Alternatively, if a CLI solution is desired, the command `nix search nixpkgs pavucontrol` can be used.
