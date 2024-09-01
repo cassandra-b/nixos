@@ -1,6 +1,12 @@
 { nixpkgs, ... }:
 
-{ config, lib, modulesPath, pkgs, ... }:
+{
+  config,
+  lib,
+  modulesPath,
+  pkgs,
+  ...
+}:
 
 {
   imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
@@ -9,7 +15,12 @@
     tmp.cleanOnBoot = true;
     extraModulePackages = [ ];
     initrd = {
-      availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usbhid" ];
+      availableKernelModules = [
+        "xhci_pci"
+        "ahci"
+        "nvme"
+        "usbhid"
+      ];
       kernelModules = [ ];
     };
     kernelModules = [ "kvm-intel" ];
@@ -77,7 +88,8 @@
 
   nixpkgs = {
     config = {
-      allowUnfreePredicate = pkg:
+      allowUnfreePredicate =
+        pkg:
         builtins.elem (lib.getName pkg) [
           "discord"
           "google-chrome"
@@ -91,8 +103,10 @@
           "fcitx5"
           "minecraft-launcher"
         ];
-      permittedInsecurePackages = [ "openssl-1.1.1w" 
-                                    "electron-27.3.11" ];
+      permittedInsecurePackages = [
+        "openssl-1.1.1w"
+        "electron-27.3.11"
+      ];
     };
     hostPlatform = lib.mkDefault "x86_64-linux";
   };
@@ -109,7 +123,7 @@
     joycond.enable = true;
     libinput.enable = true;
     xserver = {
-      videoDrivers = [ "nvidia" "modesetting" ];
+      videoDrivers = [ "nvidia" ];
       enable = true;
       desktopManager.cinnamon.enable = true;
     };
@@ -127,7 +141,10 @@
 
   users.users.cassie = {
     description = "Cassie Bleskachek";
-    extraGroups = [ "video" "wheel" ];
+    extraGroups = [
+      "video"
+      "wheel"
+    ];
     isNormalUser = true;
     shell = pkgs.zsh;
   };
