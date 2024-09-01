@@ -91,7 +91,8 @@
           "fcitx5"
           "minecraft-launcher"
         ];
-      permittedInsecurePackages = [ "openssl-1.1.1w" ];
+      permittedInsecurePackages = [ "openssl-1.1.1w" 
+                                    "electron-27.3.11" ];
     };
     hostPlatform = lib.mkDefault "x86_64-linux";
   };
