@@ -6,7 +6,7 @@
   programs.neovim = {
     enable = true;
     extraConfig = builtins.readFile ./extra-config.vim;
-    extraPackages = [ pkgs.nixfmt ];
+    extraPackages = [ pkgs.nixfmt-rfc-style ];
     plugins = [
       pkgs.vimPlugins.goyo
       {

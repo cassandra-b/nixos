@@ -107,11 +107,11 @@
   services = {
     cinnamon.apps.enable = true;
     joycond.enable = true;
+    libinput.enable = true;
     xserver = {
       videoDrivers = [ "nvidia" "modesetting" ];
       enable = true;
       desktopManager.cinnamon.enable = true;
-      libinput.enable = true;
     };
     zfs = {
       autoScrub.enable = true;
