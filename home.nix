@@ -21,6 +21,7 @@
       pkgs.gimp
       pkgs.rpcs3
       pkgs.prismlauncher
+      pkgs.praat
 
       # Fonts
       pkgs.iosevka
