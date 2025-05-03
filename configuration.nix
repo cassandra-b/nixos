@@ -57,6 +57,7 @@
   hardware = {
     cpu.intel.updateMicrocode = true;
     steam-hardware.enable = true;
+    nvidia.open = true;
   };
 
   home-manager = {
