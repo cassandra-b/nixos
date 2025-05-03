@@ -97,6 +97,7 @@
           "steam"
           "steam-original"
           "steam-run"
+          "steam-unwrapped"
           "sublimetext4"
           "zoom"
           "nvidia-x11"
