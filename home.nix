@@ -26,7 +26,7 @@
       # Fonts
       pkgs.iosevka
       pkgs.noto-fonts
-      pkgs.noto-fonts-cjk
+      pkgs.noto-fonts-cjk-sans
       pkgs.noto-fonts-emoji
       pkgs.fcitx5
       pkgs.fcitx5-chinese-addons
