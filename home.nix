@@ -52,6 +52,7 @@
       pkgs.otfcc
       pkgs.libgdiplus
       pkgs.blueman
+      pkgs.handbrake
 
       # Utilities (GUI)
       pkgs.arandr
