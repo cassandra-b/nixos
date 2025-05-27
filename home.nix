@@ -53,6 +53,7 @@
       pkgs.libgdiplus
       pkgs.blueman
       pkgs.handbrake
+      pkgs.ffmpeg_6
 
       # Utilities (GUI)
       pkgs.arandr
