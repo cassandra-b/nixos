@@ -2,9 +2,9 @@
   inputs = {
     home-manager = {
       inputs.nixpkgs.follows = "nixpkgs";
-      url = "github:nix-community/home-manager/release-24.11";
+      url = "github:nix-community/home-manager/release-25.05";
     };
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
   };
   outputs = { self, home-manager, nixpkgs }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
