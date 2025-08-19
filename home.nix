@@ -54,6 +54,7 @@
       pkgs.blueman
       pkgs.handbrake
       pkgs.ffmpeg_6
+      pkgs.bluemap
 
       # Utilities (GUI)
       pkgs.arandr
