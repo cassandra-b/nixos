@@ -10,7 +10,7 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules =
-        [ home-manager.nixosModule (import ./configuration.nix inputs) ];
+        [ home-manager.nixosModules (import ./configuration.nix inputs) ];
     };
   };
 }
